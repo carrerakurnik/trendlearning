@@ -28,7 +28,7 @@ Next you have to run the retrain.py script inside of this (tensorflow) Virtual e
 
 3. "python examples/image_retraining/retrain.py --image_dir ~/Desktop/runway_ss_18/training_images"
 
-Run that and it will train the neural net for 30 minutes or more depending on your data set
+Run that and it will train the neural net for 20 minutes or more depending on your data set
 
 Place a test image inside of the testing folder and take note of the name and extension.
 
