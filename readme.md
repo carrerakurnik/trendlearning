@@ -25,3 +25,16 @@ Next you have to run the retrain.py script inside of this (tensorflow) Virtual e
 3. "python examples/image_retraining/retrain.py --image_dir ~/Desktop/runway_ss_18/"
 
 Run that and it will train the neural net for 30 minutes or more depending on your data set
+
+Place a test image inside of the testing folder and take note of the name and extension.
+
+Run the following command in that same terminal window, change the image name as necessary.
+
+```
+python examples/label_image/label_image.py \
+--graph=/tmp/output_graph.pb --labels=/tmp/output_labels.txt \
+--input_layer=Mul \
+--output_layer=final_result \
+--input_mean=128 --input_std=128 \
+--image=testing/test.jpg
+```
