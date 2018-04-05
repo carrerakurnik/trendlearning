@@ -6,6 +6,10 @@ We are using Virtualenv with Python 2.7
 
 ## Instructions
 
+### Prepare your images
+
+Create a new folder for each category you want to identify and place it into the "training_images" folder. Move any you don't want to use into the "unused_training_images" folder for storage.
+
 ### Getting Ready
 
 Open up Terminal and cd into the directory, in our case that looks like: 
@@ -22,7 +26,7 @@ which should result in the prompt changing to be prepended by (tensorflow)
 
 Next you have to run the retrain.py script inside of this (tensorflow) Virtual env and point to the director that has your training photos, in our case:
 
-3. "python examples/image_retraining/retrain.py --image_dir ~/Desktop/runway_ss_18/"
+3. "python examples/image_retraining/retrain.py --image_dir ~/Desktop/runway_ss_18/training_images"
 
 Run that and it will train the neural net for 30 minutes or more depending on your data set
 
